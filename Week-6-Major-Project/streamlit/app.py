@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # Load trained model
 @st.cache_resource
 def load_model():
-    return joblib.load("../Model/credit_card_fraud_detection_model.pkl")
+    return joblib.load("credit_card_fraud_detection_model.pkl")
 
 model = load_model()
 
