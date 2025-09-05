@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # Load trained model
 @st.cache_resource
 def load_model():
-    return joblib.load("credit_card_fraud_detection_model.pkl")
+    return joblib.load("Week-6-Major-Project/streamlit/credit_card_fraud_detection_model.pkl")
 
 model = load_model()
 
@@ -50,3 +50,4 @@ if st.button("Predict Fraud"):
         st.error(f"Warning! Fraud Detected with probability {prediction_prob:.4f}")
     else:
         st.success(f"Transaction is Normal. Probability of fraud: {prediction_prob:.4f}")
+
