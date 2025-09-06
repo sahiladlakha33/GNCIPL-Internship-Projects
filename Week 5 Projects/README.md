@@ -1,8 +1,8 @@
 # GNCIPL Internship Week 5 Project: Fashion MNIST Classifier
 
-**Author:** Sahil Adlakha
-**Domain:** Fashion Classifiaction
-**Technology:** Neural Network
+**Author:** Sahil Adlakha   
+**Domain:** Fashion Classification   
+**Technology:** Neural Network   
 **Dataset:** Fashion MNIST(Built-in)(tensorflow.keras)
 
 ## Overview
