@@ -1,52 +1,42 @@
-# Week 3 Projects
+# GNCIPL-Internship Projects
 
-This directory contains Jupyter notebooks for the GNCIPL Internship Week 3 data analysis projects by Sahil Adlakha.
+This repo contains projects for the GNCIPL Internship submitted by Sahil Adlakha.
 
 ---
 
-## GNCIPL Week 3 Project: Mall Customer Segmentation (Clustering)
+## GNCIPL Internship Week 1 - 6 Projects
 
 **Submitted By:** Sahil Adlakha  
-**Project Type:** Customer Segmentation  
-**Techniques Used:** K-Means Clustering, Elbow Method  
-**Dataset:** Mall_Customers.csv (from Kaggle)  
+**Internship Domain:** AI/ML   
+**Duration:** 6 weeks  
+**Company:** GNCIPL
 
-### Project Overview
+---
 
-This notebook performs customer segmentation for a retail store using clustering techniques. The workflow includes:
+## Internship Overview
 
-- **Loading and exploring the dataset**
-  - Features include CustomerID, Gender, Age, Annual Income, and Spending Score.
-  - Basic statistics, null value checks, and data visualizations (scatter plots, box plots).
+Here are the key learnings from 6 week internship:
 
-- **Data Visualization**
-  - Visualizes relationships between Age, Annual Income, and Spending Score.
-  - Box plots for numerical features.
-
-- **Clustering**
-  - Uses the Elbow Method to determine the optimal number of customer segments (clusters).
-  - Applies K-Means clustering (typically 5 clusters found optimal).
-  - Assigns cluster labels to each customer.
-
-- **Cluster Visualization**
-  - Plots clusters and centroids to show customer groups in terms of annual income and spending score.
-
-**Libraries Used:** pandas, matplotlib, seaborn, scikit-learn
+- Python Basics
+- Data Visualiztion
+- Exploratory Data Analysis(EDA)
+- Data preprocessing
+- Classification
+- Clustering
+- Model Training
+- Neural Networks
 
 ---
 
 ## Getting Started
 
 1. Clone this repository.
-2. Download the dataset (`Mall_Customers.csv`) from Kaggle and place it in the Week 3 Projects directory.
-3. Install the required libraries:
-   ```bash
-   pip install pandas matplotlib seaborn scikit-learn
-   ```
+2. Download the dataset from Kaggle and if using built-in datasets.
+3. Install the required libraries using ```pip install```.
 4. Open and run the notebook in Jupyter to reproduce the analysis.
 
 ---
 
 ## License
 
-This project is for educational and internship purposes.
+These projects are for educational and internship purposes.
