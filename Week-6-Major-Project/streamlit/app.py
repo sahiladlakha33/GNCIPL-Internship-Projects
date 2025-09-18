@@ -23,13 +23,10 @@ feature_names = [
 # Collect user inputs via number inputs
 inputs = {}
 for feature in feature_names:
-    if feature in ['Time', 'Amount']:
-        try:
-            inputs[feature] = float(st.text_input(f"{feature}"))
-        except ValueError:
-            inputs[feature] = 0.0
-    else:
-        inputs[feature] = st.number_input(f"{feature}", format="%.4f", min_value=-40.0, max_value=40.0, value=0.0)
+    try:
+        inputs[feature] = float(st.text_input(f"{feature}"))
+    except ValueError:
+        inputs[feature] = 0.0
 
 # Preprocessing scaler statistics from training data 
 def preprocess_input(data):
@@ -50,6 +47,7 @@ if st.button("Predict Fraud"):
         st.error(f"Warning! Fraud Detected with probability {prediction_prob:.4f}")
     else:
         st.success(f"Transaction is Normal. Probability of fraud: {prediction_prob:.4f}")
+
 
 
 
