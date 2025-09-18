@@ -29,7 +29,7 @@ for feature in feature_names:
         except ValueError:
             inputs[feature] = 0.0
     else:
-        inputs[feature] = st.slider(f"{feature}", format="%.2f", min_value=-10.0, max_value=10.0, value=0.0)
+        inputs[feature] = st.number_input(f"{feature}", format="%.2f", min_value=-40.0, max_value=40.0, value=0.0)
 
 # Preprocessing scaler statistics from training data 
 def preprocess_input(data):
@@ -50,5 +50,6 @@ if st.button("Predict Fraud"):
         st.error(f"Warning! Fraud Detected with probability {prediction_prob:.4f}")
     else:
         st.success(f"Transaction is Normal. Probability of fraud: {prediction_prob:.4f}")
+
 
 
