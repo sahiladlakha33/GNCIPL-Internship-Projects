@@ -25,7 +25,7 @@ inputs = {}
 for feature in feature_names:
     try:
         val = float(st.text_input(f"{feature}"))
-        if val < -40 or val > 40:
+        if feature.startswith('V') and (val < -40 or val > 40):
             st.write("Not within range of [-40, 40]")
         inputs[feature] = val
     except ValueError:
@@ -50,6 +50,7 @@ if st.button("Predict Fraud"):
         st.error(f"Warning! Fraud Detected with probability {prediction_prob:.4f}")
     else:
         st.success(f"Transaction is Normal. Probability of fraud: {prediction_prob:.4f}")
+
 
 
 
